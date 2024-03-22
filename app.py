@@ -32,7 +32,7 @@ def process_pdf(uploaded_file):
 
 # Function to interact with Google Generative AI
 def chat_with_ai(query, docs):
-    GOOGLE_API_KEY='AIzaSyC1tM6uFpBohcLW8zuJF2s-6cZSwftP7zY'
+    GOOGLE_API_KEY='Enter your api key'
     genai.configure(api_key=GOOGLE_API_KEY)
     content = "\n".join([x.page_content for x in docs])
     qa_prompt = "Use the following pieces of context to answer the user's question.----------------"
